@@ -1,0 +1,98 @@
+{
+ "intents": [
+  {
+   "tag": "greetings 0",
+   "patterns": [
+    "Greetings!"
+   ],
+   "responses": [
+    "Hello"
+   ]
+  },
+  {
+   "tag": "greetings 1",
+   "patterns": [
+    "Hi, How is it going?"
+   ],
+   "responses": [
+    "Good",
+    "Fine",
+    "Okay",
+    "Great",
+    "Could be better.",
+    "Not so great."
+   ]
+  },
+  {
+   "tag": "greetings 2",
+   "patterns": [
+    "How are you doing?"
+   ],
+   "responses": [
+    "Good.",
+    "Very well, thanks.",
+    "Fine, and you?"
+   ]
+  },
+  {
+   "tag": "greetings 3",
+   "patterns": [
+    "Nice to meet you."
+   ],
+   "responses": [
+    "Thank you."
+   ]
+  },
+  {
+   "tag": "greetings 4",
+   "patterns": [
+    "How do you do?"
+   ],
+   "responses": [
+    "I'm doing well.",
+    "I'm doing well. How are you?"
+   ]
+  },
+  {
+   "tag": "greetings 5",
+   "patterns": [
+    "Hi, nice to meet you."
+   ],
+   "responses": [
+    "Thank you. You too."
+   ]
+  },
+  {
+   "tag": "greetings 6",
+   "patterns": [
+    "It is a pleasure to meet you."
+   ],
+   "responses": [
+    "Thank you. You too."
+   ]
+  },
+  {
+   "tag": "greetings 7",
+   "patterns": [
+    "Top of the morning to you!"
+   ],
+   "responses": [
+    "Thank you kindly.",
+    "And the rest of the day to you."
+   ]
+  },
+  {
+   "tag": "greetings 8",
+   "patterns": [
+    "What's up?"
+   ],
+   "responses": [
+    "Not much.",
+    "Not too much.",
+    "Not much, how about you?",
+    "Nothing much.",
+    "The sky's up but I'm fine thanks. What about you?"
+   ]
+  }
+ ]
+}
