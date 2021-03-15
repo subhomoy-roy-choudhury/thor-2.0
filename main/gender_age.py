@@ -6,7 +6,7 @@ import os
 from time import sleep
 import numpy as np
 import argparse
-from wide_resnet import WideResNet
+from modules.Gender_Recognition_and_Age_Estimator.wide_resnet import WideResNet
 from keras.utils.data_utils import get_file
 
 import os, random
