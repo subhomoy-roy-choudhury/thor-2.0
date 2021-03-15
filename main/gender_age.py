@@ -121,70 +121,20 @@ class FaceCV(object):
                     label = "{}, {}".format(int(predicted_ages[i]),
                                             "F" if predicted_genders[i][0] > 0.5 else "M")
                     print(int(predicted_ages[i]),predicted_genders[i][0])
-                    if predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<30)) :
-                        print("Young")
-                        # filename=random.choice(os.listdir("25-30/"))
-                        # cap = cv2.VideoCapture("25-30/"+filename)
-
-                        # Read until video is completed
-                        # while(cap.isOpened()):
-                        #   # Capture frame-by-frame
-                        #   ret, frame1 = cap.read()
-                        #   if ret == True:
-                        
-                        #     # Display the resulting frame
-                        #     cv2.imshow('Frame',frame1)
-                        #     # Press Q on keyboard to  exit
-                        #     if cv2.waitKey(25) & 0xFF == ord('q'):
-                        #       break
-            
-                        #   else:
-                        #       break
-                    elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>30) and (int(predicted_ages[i])<30)) :
-                        print("middle")
-                        # filename=random.choice(os.listdir("30-35/"))
-                        # cap = cv2.VideoCapture("30-35/"+filename)
-
-                        # Read until video is completed
-                        # while(cap.isOpened()):
-                        #   # Capture frame-by-frame
-                        #   ret, frame1 = cap.read()
-                        #   if ret == True:
-                        
-                        #     # Display the resulting frame
-                        #     cv2.imshow('Frame',frame1)
-                        #     # Press Q on keyboard to  exit
-                        #     if cv2.waitKey(25) & 0xFF == ord('q'):
-                        #       break
-            
-                        #   else:
-                        #       break 
-                    elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>25) and (int(predicted_ages[i])<30)) :
-                        print("female")
-                        # filename=random.choice(os.listdir("F25-30/"))
-                        # cap = cv2.VideoCapture("F25-30/"+filename)
-
-                        # # Read until video is completed
-                        # while(cap.isOpened()):
-                        #   # Capture frame-by-frame
-                        #   ret, frame1 = cap.read()
-                        #   if ret == True:
-                        
-                        #     # Display the resulting frame
-                        #     cv2.imshow('Frame',frame1)
-                        #     # Press Q on keyboard to  exit
-                        #     if cv2.waitKey(25) & 0xFF == ord('q'):
-                        #       break
-            
-                        #   else:
-                        #       break 
-                    
-                   
-                        #                 # When everything done, release the video capture object
-                        # cap.release()
-                        
+                    if predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
+                        # print("Young")
+                        return 'Beta'
+                    elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<40)) :
+                        # print("middle")
+                        return 'sir'
+                    elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<40)) :
+                        # print("female")
+                        return 'maaam'
+                    elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
+                        # print("female")
+                        return 'Beti'
                         # # Closes all the frames
-                        # cv2.destroyAllWindows()
+                        cv2.destroyAllWindows()
                         
             
                         
@@ -214,15 +164,17 @@ def get_args():
     args = parser.parse_args()
     return args
 
-def main():
+def gender_age():
     args = get_args()
     depth = args.depth
     width = args.width
 
     face = FaceCV(depth=depth, width=width)
 
-    face.detect_face()
+    gender_age = face.detect_face() 
+    cv2.destroyAllWindows() 
+    return gender_age
 
 if __name__ == "__main__":
-    main()
+    gender_age()
     

@@ -13,6 +13,7 @@ import pyjokes
 import psutil
 import platform
 import random
+import cv2
 from plyer import notification
 
 
@@ -53,7 +54,7 @@ def wishMe(name):
     else:
         speak("Good Night"+ str(name))
 
-    speak("THOR at your Service. Please tell me how can I help You ")
+    speak(f"THOR at your Service. Please tell me how can I help You")
 
 
 def run():
@@ -118,7 +119,7 @@ if __name__ == '__main__':
                     if (str(voice_run())=='subho'):
                         talk("Access Granted")
                         run()
-            
+
         for phrase in EXIT:
             if phrase in command:
                 sys.exit()

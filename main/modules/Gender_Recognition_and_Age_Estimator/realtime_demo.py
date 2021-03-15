@@ -140,7 +140,7 @@ class FaceCV(object):
             
                         #   else:
                         #       break
-                    elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>30) and (int(predicted_ages[i])<30)) :
+                    elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<30)) :
                         print("middle")
                         # filename=random.choice(os.listdir("30-35/"))
                         # cap = cv2.VideoCapture("30-35/"+filename)

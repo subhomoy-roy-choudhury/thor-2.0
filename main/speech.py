@@ -18,7 +18,7 @@ def talk(message):
 def take_command():
     try:
         with sr.Microphone() as source:
-            talk('listening...')
+            talk('listening ...')
             listener.pause_threshold = 1
             listener.adjust_for_ambient_noise(source)
             voice = listener.listen(source)
