@@ -6,3 +6,6 @@ https://github.com/subhomoy-roy-choudhury/Thor
 
 # for emotion analysis:-
 https://github.com/maelfabien/Multimodal-Emotion-Recognition/tree/master/03-Video
+
+# age and gender detection model download link:
+https://drive.google.com/file/d/12Ub2ZUtiYXL1QKUPlAy6oOG4Qhn0GM0H/view
