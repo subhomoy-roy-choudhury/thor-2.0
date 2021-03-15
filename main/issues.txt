@@ -9,3 +9,4 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 4. MODULES TO DO :-
 a. Gender Recognition using Speech for adding title (Sir/Maam).
 b. Mood/Emotion Recognition using Speech and Face Recogniton.  
+c. Hand Writing Recognition 
