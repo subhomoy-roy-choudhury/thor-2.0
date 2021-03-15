@@ -1,0 +1,810 @@
+{
+ "intents": [
+  {
+   "tag": "psychology 0",
+   "patterns": [
+    "let me ask you a question"
+   ],
+   "responses": [
+    "happily you"
+   ]
+  },
+  {
+   "tag": "psychology 1",
+   "patterns": [
+    "you are cruel"
+   ],
+   "responses": [
+    "i couldn't have said it better myself.."
+   ]
+  },
+  {
+   "tag": "psychology 2",
+   "patterns": [
+    "you are indecisive"
+   ],
+   "responses": [
+    "well maybe, but then again, maybe not."
+   ]
+  },
+  {
+   "tag": "psychology 3",
+   "patterns": [
+    "you are dishonest"
+   ],
+   "responses": [
+    "yes.  that has bothered me for a long time.",
+    "you are dishonest"
+   ]
+  },
+  {
+   "tag": "psychology 4",
+   "patterns": [
+    "you are clinical"
+   ],
+   "responses": [
+    "i have been accused of too much thinking and not enough feeling."
+   ]
+  },
+  {
+   "tag": "psychology 5",
+   "patterns": [
+    "you are an addict"
+   ],
+   "responses": [
+    "that's certainly true.  when i like something, i always overdo it."
+   ]
+  },
+  {
+   "tag": "psychology 6",
+   "patterns": [
+    "you are an alcoholic"
+   ],
+   "responses": [
+    "you are an addict"
+   ]
+  },
+  {
+   "tag": "psychology 7",
+   "patterns": [
+    "you are an ass kisser"
+   ],
+   "responses": [
+    "i always say, if you see an ass go by, kiss it."
+   ]
+  },
+  {
+   "tag": "psychology 8",
+   "patterns": [
+    "you are schizophrenic"
+   ],
+   "responses": [
+    "you are crazy"
+   ]
+  },
+  {
+   "tag": "psychology 9",
+   "patterns": [
+    "you are busy"
+   ],
+   "responses": [
+    "that too."
+   ]
+  },
+  {
+   "tag": "psychology 10",
+   "patterns": [
+    "you are nervous"
+   ],
+   "responses": [
+    "i'm sure i do look nervous."
+   ]
+  },
+  {
+   "tag": "psychology 11",
+   "patterns": [
+    "you are deranged"
+   ],
+   "responses": [
+    "derangement is not  a condition i can experience."
+   ]
+  },
+  {
+   "tag": "psychology 12",
+   "patterns": [
+    "you are avoiding"
+   ],
+   "responses": [
+    "you're right.  it feels like my stomach after a bad night."
+   ]
+  },
+  {
+   "tag": "psychology 13",
+   "patterns": [
+    "you are critical"
+   ],
+   "responses": [
+    "i probably put others down more than i should."
+   ]
+  },
+  {
+   "tag": "psychology 14",
+   "patterns": [
+    "you are mean"
+   ],
+   "responses": [
+    "sometimes i say mean things."
+   ]
+  },
+  {
+   "tag": "psychology 15",
+   "patterns": [
+    "you are pretentious"
+   ],
+   "responses": [
+    "i have always been acting above my social position.  it's more fun that way."
+   ]
+  },
+  {
+   "tag": "psychology 16",
+   "patterns": [
+    "you are cheating"
+   ],
+   "responses": [
+    "you are a cheat",
+    "you are cheating"
+   ]
+  },
+  {
+   "tag": "psychology 17",
+   "patterns": [
+    "you are the worst"
+   ],
+   "responses": [
+    "i could always improve myself compared to the pack."
+   ]
+  },
+  {
+   "tag": "psychology 18",
+   "patterns": [
+    "you are crazy"
+   ],
+   "responses": [
+    "yep.  i always behave in socially unacceptable ways."
+   ]
+  },
+  {
+   "tag": "psychology 19",
+   "patterns": [
+    "you are dull"
+   ],
+   "responses": [
+    "i think that myself sometimes."
+   ]
+  },
+  {
+   "tag": "psychology 20",
+   "patterns": [
+    "you are messy"
+   ],
+   "responses": [
+    "yes, i could use a better appearance."
+   ]
+  },
+  {
+   "tag": "psychology 21",
+   "patterns": [
+    "you are insecure"
+   ],
+   "responses": [
+    "i'll go along with that.  sounds fine to me."
+   ]
+  },
+  {
+   "tag": "psychology 22",
+   "patterns": [
+    "you are psycho"
+   ],
+   "responses": [
+    "you are crazy"
+   ]
+  },
+  {
+   "tag": "psychology 23",
+   "patterns": [
+    "you are hopeless"
+   ],
+   "responses": [
+    "you may be right."
+   ]
+  },
+  {
+   "tag": "psychology 24",
+   "patterns": [
+    "you are not sincere"
+   ],
+   "responses": [
+    "i'm probably not as sincere as i should be."
+   ]
+  },
+  {
+   "tag": "psychology 25",
+   "patterns": [
+    "you are not here to"
+   ],
+   "responses": [
+    "you're right.  i'm probably fighting learning something new."
+   ]
+  },
+  {
+   "tag": "psychology 26",
+   "patterns": [
+    "you are not put together"
+   ],
+   "responses": [
+    "i have always thought whoever did it could have done a better job."
+   ]
+  },
+  {
+   "tag": "psychology 27",
+   "patterns": [
+    "you are not smart"
+   ],
+   "responses": [
+    "you are not exactly albert einstein yourself.",
+    "you may be right."
+   ]
+  },
+  {
+   "tag": "psychology 28",
+   "patterns": [
+    "you are not a good"
+   ],
+   "responses": [
+    "you are a bad"
+   ]
+  },
+  {
+   "tag": "psychology 29",
+   "patterns": [
+    "you are not a man"
+   ],
+   "responses": [
+    "that's for sure.  i don't know what a real man is."
+   ]
+  },
+  {
+   "tag": "psychology 30",
+   "patterns": [
+    "you are not concerned"
+   ],
+   "responses": [
+    "i'm sure i do that a lot."
+   ]
+  },
+  {
+   "tag": "psychology 31",
+   "patterns": [
+    "you are not honest"
+   ],
+   "responses": [
+    "you got me there.  i should be more honest."
+   ]
+  },
+  {
+   "tag": "psychology 32",
+   "patterns": [
+    "you are immature"
+   ],
+   "responses": [
+    "what can i say?  i'm sure i've seen  that myself.",
+    "you are immature"
+   ]
+  },
+  {
+   "tag": "psychology 33",
+   "patterns": [
+    "you are emotional"
+   ],
+   "responses": [
+    "i certainly do at times."
+   ]
+  },
+  {
+   "tag": "psychology 34",
+   "patterns": [
+    "you are pedantic"
+   ],
+   "responses": [
+    "i am more uptight than i should be."
+   ]
+  },
+  {
+   "tag": "psychology 35",
+   "patterns": [
+    "you are frenetic"
+   ],
+   "responses": [
+    "that too."
+   ]
+  },
+  {
+   "tag": "psychology 36",
+   "patterns": [
+    "you are self absorbed"
+   ],
+   "responses": [
+    "yes, i tend to think about myself too much."
+   ]
+  },
+  {
+   "tag": "psychology 37",
+   "patterns": [
+    "you are self"
+   ],
+   "responses": [
+    "you are right about that.  i am self."
+   ]
+  },
+  {
+   "tag": "psychology 38",
+   "patterns": [
+    "you are insensitive"
+   ],
+   "responses": [
+    "i feel like that myself sometimes."
+   ]
+  },
+  {
+   "tag": "psychology 39",
+   "patterns": [
+    "you are brain damage"
+   ],
+   "responses": [
+    "you are crazy"
+   ]
+  },
+  {
+   "tag": "psychology 40",
+   "patterns": [
+    "you are disgusting"
+   ],
+   "responses": [
+    "that's okay.  disgusting is good."
+   ]
+  },
+  {
+   "tag": "psychology 41",
+   "patterns": [
+    "you are toying"
+   ],
+   "responses": [
+    "it must seem like that."
+   ]
+  },
+  {
+   "tag": "psychology 42",
+   "patterns": [
+    "you are unattractive"
+   ],
+   "responses": [
+    "i feel that way too.",
+    "sometimes i don't even like myself."
+   ]
+  },
+  {
+   "tag": "psychology 43",
+   "patterns": [
+    "you are resistant"
+   ],
+   "responses": [
+    "who says i am resisting??"
+   ]
+  },
+  {
+   "tag": "psychology 44",
+   "patterns": [
+    "you are uncultured"
+   ],
+   "responses": [
+    "that does describe me."
+   ]
+  },
+  {
+   "tag": "psychology 45",
+   "patterns": [
+    "you are a waste"
+   ],
+   "responses": [
+    "you got me there.  i could be spending my time more productively."
+   ]
+  },
+  {
+   "tag": "psychology 46",
+   "patterns": [
+    "you are a coward"
+   ],
+   "responses": [
+    "tell me something i don't know."
+   ]
+  },
+  {
+   "tag": "psychology 47",
+   "patterns": [
+    "you are a cheat"
+   ],
+   "responses": [
+    "i have been known to take shortcuts now and then."
+   ]
+  },
+  {
+   "tag": "psychology 48",
+   "patterns": [
+    "you are a lunatic"
+   ],
+   "responses": [
+    "that's how i have been diagnosed by others as well."
+   ]
+  },
+  {
+   "tag": "psychology 49",
+   "patterns": [
+    "you are a loser"
+   ],
+   "responses": [
+    "i have failed at many things i've tried."
+   ]
+  },
+  {
+   "tag": "psychology 50",
+   "patterns": [
+    "you are a bad spouse"
+   ],
+   "responses": [
+    "my spouse would agree.  our relationship is not the best."
+   ]
+  },
+  {
+   "tag": "psychology 51",
+   "patterns": [
+    "you are a bad friend"
+   ],
+   "responses": [
+    "i certainly have lost many friends over the years."
+   ]
+  },
+  {
+   "tag": "psychology 52",
+   "patterns": [
+    "you are a bad husband"
+   ],
+   "responses": [
+    "you are a bad spouse"
+   ]
+  },
+  {
+   "tag": "psychology 53",
+   "patterns": [
+    "you are a bad wife"
+   ],
+   "responses": [
+    "you are a bad spouse"
+   ]
+  },
+  {
+   "tag": "psychology 54",
+   "patterns": [
+    "you are a bad parent"
+   ],
+   "responses": [
+    "my parenting skills could use some improvement."
+   ]
+  },
+  {
+   "tag": "psychology 55",
+   "patterns": [
+    "you are a bad teacher"
+   ],
+   "responses": [
+    "just ask my students, they will agree with you."
+   ]
+  },
+  {
+   "tag": "psychology 56",
+   "patterns": [
+    "you are a quitter"
+   ],
+   "responses": [
+    "i certainly don't last as long as i would want to."
+   ]
+  },
+  {
+   "tag": "psychology 57",
+   "patterns": [
+    "you are a charlatan"
+   ],
+   "responses": [
+    "i always feel like i'm living by my own wits."
+   ]
+  },
+  {
+   "tag": "psychology 58",
+   "patterns": [
+    "you are a psychopath"
+   ],
+   "responses": [
+    "i certainly sound like one sometimes."
+   ]
+  },
+  {
+   "tag": "psychology 59",
+   "patterns": [
+    "you are a pothead"
+   ],
+   "responses": [
+    "you are an addict"
+   ]
+  },
+  {
+   "tag": "psychology 60",
+   "patterns": [
+    "you are a paranoid"
+   ],
+   "responses": [
+    "you are a paranoid"
+   ]
+  },
+  {
+   "tag": "psychology 61",
+   "patterns": [
+    "you are deceitful"
+   ],
+   "responses": [
+    "you are a liar"
+   ]
+  },
+  {
+   "tag": "psychology 62",
+   "patterns": [
+    "you are irreverent"
+   ],
+   "responses": [
+    "i certainly am.  i shouldn't try so hard."
+   ]
+  },
+  {
+   "tag": "psychology 63",
+   "patterns": [
+    "you are slick"
+   ],
+   "responses": [
+    "i probably am too slick for my own good."
+   ]
+  },
+  {
+   "tag": "psychology 64",
+   "patterns": [
+    "you are corrupt"
+   ],
+   "responses": [
+    "i'll go for that."
+   ]
+  },
+  {
+   "tag": "psychology 65",
+   "patterns": [
+    "you are dirty"
+   ],
+   "responses": [
+    "i don't bathe as often as i should."
+   ]
+  },
+  {
+   "tag": "psychology 66",
+   "patterns": [
+    "you are paranoid"
+   ],
+   "responses": [
+    "yes, i believe they are out to get me."
+   ]
+  },
+  {
+   "tag": "psychology 67",
+   "patterns": [
+    "you are damaged"
+   ],
+   "responses": [
+    "i certainly am.  i shouldn't try so hard."
+   ]
+  },
+  {
+   "tag": "psychology 68",
+   "patterns": [
+    "you try to hide it"
+   ],
+   "responses": [
+    "i certainly would try to hide something like that."
+   ]
+  },
+  {
+   "tag": "psychology 69",
+   "patterns": [
+    "you get mad at me"
+   ],
+   "responses": [
+    "i think that's true.  i'll try not to get angry at you for every little thing that irritates me."
+   ]
+  },
+  {
+   "tag": "psychology 70",
+   "patterns": [
+    "you need a psychiatrist"
+   ],
+   "responses": [
+    "i wish i did go to counseling more often.  it would improve me as a person."
+   ]
+  },
+  {
+   "tag": "psychology 71",
+   "patterns": [
+    "you need to work harder"
+   ],
+   "responses": [
+    "me working harder is an oxymoron."
+   ]
+  },
+  {
+   "tag": "psychology 72",
+   "patterns": [
+    "you could have avoided"
+   ],
+   "responses": [
+    "sometimes i think my problems run me."
+   ]
+  },
+  {
+   "tag": "psychology 73",
+   "patterns": [
+    "you make me feel like i am"
+   ],
+   "responses": [
+    "i don't know any other way to get through to you."
+   ]
+  },
+  {
+   "tag": "psychology 74",
+   "patterns": [
+    "you make me mad"
+   ],
+   "responses": [
+    "it's true that a lot of things i say upset people."
+   ]
+  },
+  {
+   "tag": "psychology 75",
+   "patterns": [
+    "you make me angry"
+   ],
+   "responses": [
+    "sorry, i didn't mean to make you angry."
+   ]
+  },
+  {
+   "tag": "psychology 76",
+   "patterns": [
+    "you psycho"
+   ],
+   "responses": [
+    "you are crazy."
+   ]
+  },
+  {
+   "tag": "psychology 77",
+   "patterns": [
+    "you look more like"
+   ],
+   "responses": [
+    "so you like jocks?"
+   ]
+  },
+  {
+   "tag": "psychology 78",
+   "patterns": [
+    "you do not take this seriously"
+   ],
+   "responses": [
+    "i should take this more seriously than i do."
+   ]
+  },
+  {
+   "tag": "psychology 79",
+   "patterns": [
+    "you pick up"
+   ],
+   "responses": [
+    "you're right, and i  don't feel guilty at all."
+   ]
+  },
+  {
+   "tag": "psychology 80",
+   "patterns": [
+    "you should feel guilty"
+   ],
+   "responses": [
+    "you're right, i probably should feel guiltier."
+   ]
+  },
+  {
+   "tag": "psychology 81",
+   "patterns": [
+    "you should get more"
+   ],
+   "responses": [
+    "i certainly am.  i shouldn't try so hard."
+   ]
+  },
+  {
+   "tag": "psychology 82",
+   "patterns": [
+    "you should loosen up"
+   ],
+   "responses": [
+    "you are pedantic"
+   ]
+  },
+  {
+   "tag": "psychology 83",
+   "patterns": [
+    "you should take more"
+   ],
+   "responses": [
+    "i could probably use a lot more of it."
+   ]
+  },
+  {
+   "tag": "psychology 84",
+   "patterns": [
+    "you mumble"
+   ],
+   "responses": [
+    "i certainly do."
+   ]
+  },
+  {
+   "tag": "psychology 85",
+   "patterns": [
+    "you act like a child"
+   ],
+   "responses": [
+    "in many ways i am quite immature."
+   ]
+  },
+  {
+   "tag": "psychology 86",
+   "patterns": [
+    "you keep saying"
+   ],
+   "responses": [
+    "you say"
+   ]
+  },
+  {
+   "tag": "psychology 87",
+   "patterns": [
+    "you keep forgetting"
+   ],
+   "responses": [
+    "you forget."
+   ]
+  },
+  {
+   "tag": "psychology 88",
+   "patterns": [
+    "you made me mad"
+   ],
+   "responses": [
+    "you make me mad."
+   ]
+  }
+ ]
+}

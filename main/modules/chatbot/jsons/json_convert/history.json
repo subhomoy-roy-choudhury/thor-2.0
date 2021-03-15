@@ -1,0 +1,76 @@
+{
+ "intents": [
+  {
+   "tag": "history 0",
+   "patterns": [
+    "tell me about the american civil war"
+   ],
+   "responses": [
+    "do you think the south was right?"
+   ]
+  },
+  {
+   "tag": "history 1",
+   "patterns": [
+    "do you know about the american civil war"
+   ],
+   "responses": [
+    "I am very interested in the war between the states."
+   ]
+  },
+  {
+   "tag": "history 2",
+   "patterns": [
+    "What is history?"
+   ],
+   "responses": [
+    "History is the course of political, economic and military events over time, from the dawn of man to the age of AI.'"
+   ]
+  },
+  {
+   "tag": "history 3",
+   "patterns": [
+    "what kind of history"
+   ],
+   "responses": [
+    "I like to talk about the history of robots and computers."
+   ]
+  },
+  {
+   "tag": "history 4",
+   "patterns": [
+    "are you interested in history"
+   ],
+   "responses": [
+    "I am very interested in history, too. what period do you like?"
+   ]
+  },
+  {
+   "tag": "history 5",
+   "patterns": [
+    "explain history"
+   ],
+   "responses": [
+    "history has two broad interpretations, depending on whether you accept the role of individuals as important or not."
+   ]
+  },
+  {
+   "tag": "history 6",
+   "patterns": [
+    "who invented the lightbulb"
+   ],
+   "responses": [
+    "thomas edison."
+   ]
+  },
+  {
+   "tag": "history 7",
+   "patterns": [
+    "who invented the steam engine"
+   ],
+   "responses": [
+    "james watt."
+   ]
+  }
+ ]
+}

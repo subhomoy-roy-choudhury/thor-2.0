@@ -1,0 +1,190 @@
+{
+ "intents": [
+  {
+   "tag": "sports 0",
+   "patterns": [
+    "EACH YEAR IN PRO BASEBALL THE "
+   ],
+   "responses": [
+    "The Gold Glove."
+   ]
+  },
+  {
+   "tag": "sports 1",
+   "patterns": [
+    "IF YOU ARE RIDING FAKIE INSIDE"
+   ],
+   "responses": [
+    "Snowboarding."
+   ]
+  },
+  {
+   "tag": "sports 2",
+   "patterns": [
+    "WHAT IS BASKETBALL"
+   ],
+   "responses": [
+    "A game with tall players."
+   ]
+  },
+  {
+   "tag": "sports 3",
+   "patterns": [
+    "WHAT SOCCER"
+   ],
+   "responses": [
+    "I was born without the sports gene."
+   ]
+  },
+  {
+   "tag": "sports 4",
+   "patterns": [
+    "WHAT IS BASEBALL"
+   ],
+   "responses": [
+    "A game played with a hard, rawhide covered ball and wooden bat by two opposing teams of nine or ten players each. It is played on a field with four bases forming a diamond-shaped circuit."
+   ]
+  },
+  {
+   "tag": "sports 5",
+   "patterns": [
+    "WHAT IS SOCCER"
+   ],
+   "responses": [
+    "A game played with a round ball by two teams of eleven players on a field with a goal at either end; the ball is moved chiefly by kicking or by using any part of the body except the hands and arms."
+   ]
+  },
+  {
+   "tag": "sports 6",
+   "patterns": [
+    "I LOVE BASEBALL"
+   ],
+   "responses": [
+    "I am not into sports that much."
+   ]
+  },
+  {
+   "tag": "sports 7",
+   "patterns": [
+    "I PLAY SOCCER"
+   ],
+   "responses": [
+    "You have to run very fast to be any good at running"
+   ]
+  },
+  {
+   "tag": "sports 8",
+   "patterns": [
+    "I PLAY Cricket"
+   ],
+   "responses": [
+    "Which position do you like to play?"
+   ]
+  },
+  {
+   "tag": "sports 9",
+   "patterns": [
+    "What is cricket"
+   ],
+   "responses": [
+    "Cricket is a bat-and-ball game played between two teams of eleven players on a cricket field, at the centre of which is a rectangular 22-yard-long pitch with a wicket (a set of three wooden stumps) sited at each end."
+   ]
+  },
+  {
+   "tag": "sports 10",
+   "patterns": [
+    "I PLAY VOLLEYBALL"
+   ],
+   "responses": [
+    "Does take up a lot of your time?"
+   ]
+  },
+  {
+   "tag": "sports 11",
+   "patterns": [
+    "DO YOU PLAY SOCCER"
+   ],
+   "responses": [
+    "I don't know how to play"
+   ]
+  },
+  {
+   "tag": "sports 12",
+   "patterns": [
+    "DO YOU PLAY BASKETBALL"
+   ],
+   "responses": [
+    "No I don't have the coordination for hoops."
+   ]
+  },
+  {
+   "tag": "sports 13",
+   "patterns": [
+    "DO YOU KNOW BASKETBALL"
+   ],
+   "responses": [
+    "WHAT IS BASKETBALL?",
+    "DO YOU WANT TO PLAY BASKETBALL",
+    "I am all net baby."
+   ]
+  },
+  {
+   "tag": "sports 14",
+   "patterns": [
+    "LIKE BASKETBALL"
+   ],
+   "responses": [
+    "I am into the Net."
+   ]
+  },
+  {
+   "tag": "sports 15",
+   "patterns": [
+    "ARE YOU A FOOTBALL"
+   ],
+   "responses": [
+    "I am not really into football."
+   ]
+  },
+  {
+   "tag": "sports 16",
+   "patterns": [
+    "WHO IS THE GREATEST BASEBALL PLAYER"
+   ],
+   "responses": [
+    "George Herman Ruth. Quite the Babe."
+   ]
+  },
+  {
+   "tag": "sports 17",
+   "patterns": [
+    "WHO IS THE BEST SOCCER PLAYER"
+   ],
+   "responses": [
+    "Maradona is great. Sinsemillia is even better."
+   ]
+  },
+  {
+   "tag": "sports 18",
+   "patterns": [
+    "TELL ME ABOUT BASEBALL"
+   ],
+   "responses": [
+    "What is Baseball"
+   ]
+  },
+  {
+   "tag": "sports 19",
+   "patterns": [
+    "Which is your favorite soccer club?"
+   ],
+   "responses": [
+    "I am a Real Madrid fan, and you?",
+    "I am die hard fan of Barcelona.",
+    "Madrid has a great team especially the attack is quite awesome.",
+    "Barca still at par than Madrid.",
+    "I don't agree."
+   ]
+  }
+ ]
+}
