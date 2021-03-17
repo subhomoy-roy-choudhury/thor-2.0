@@ -1,0 +1,12 @@
+# ISSUES
+1. At first ,sometimes float_input or take_command is returning NONE or string for wrong 
+inputs on returning during the first iteration and its not updating the float values
+as its updating the error string in the param list instead.
+FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+2. gender_age integration failed due to opening of multiple cam window confusing the opencv software. so we must make a central script for all opencv integrations.
+3. voice indentification in take command needs work. 
+4. MODULES TO DO :-
+a. Gender Recognition using Speech for adding title (Sir/Maam).
+b. Mood/Emotion Recognition using Speech and Face Recogniton.  
+c. Hand Writing Recognition 
