@@ -1,7 +1,9 @@
 from speech import *
 from heart_disease_predict import *
 from chatbot import brain 
-from face import face
+from face_func import face
+from emotion_func import emotion
+from gender_age import gender_age
 from recording import voice_run
 import subprocess
 import sys
@@ -28,7 +30,7 @@ def cpu():
     speak("Battery is at"+ str(battery.percent))
 
 
-def wishMe(name):
+def wishMe(name,title):
     speak("Welcome"+ str(name))
     hour = int(datetime.datetime.now().hour)
     print(hour)
@@ -43,22 +45,22 @@ def wishMe(name):
     speak("the current Date is")
     speak(str(date)+' '+str(month)+' '+ str(year))
     if hour>=6 and hour<12:
-        speak("Good Morning"+ str(name))
+        speak("Good Morning"+ str(name)+str(title))
 
     elif hour>=12 and hour<18:
-        speak("Good Afternoon"+ str(name))
+        speak("Good Afternoon"+ str(name)+str(title))
 
     elif hour>=18 and hour<24:
-        speak("Good Evening"+ str(name))
+        speak("Good Evening"+ str(name)+str(title))
 
     else:
-        speak("Good Night"+ str(name))
+        speak("Good Night"+ str(name)+str(title))
 
-    speak(f"THOR at your Service. Please tell me how can I help You")
+    speak(f"THOR at your Service. Please tell me how can I help You {title}")
 
 
 def run():
-    wishMe(NAME)
+    wishMe(NAME,TITLE)
     while True:
         command = take_command()
         print(command)
@@ -101,10 +103,11 @@ if __name__ == '__main__':
     NAME = 'Subhomoy'
     WAKE = ["hey lex","wake up"]
     EXIT =["go offline"]
+    TITLE = str(gender_age())
     while True:
         command = take_command()
         for phrase in WAKE:
-            if phrase in command and str(face())=="unlocked"  :
+            if phrase in command and str(face())=="SUBHO" :
                 number = random.randint(100000,999999)
                 notification.notify(
                 title = "Hacker",

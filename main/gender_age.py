@@ -2,15 +2,14 @@
 Face detection
 """
 import cv2
-import os
+import os, random
 from time import sleep
+import time
 import numpy as np
 import argparse
-from modules.Gender_Recognition_and_Age_Estimator.wide_resnet import WideResNet
+from wide_resnet import WideResNet
 from keras.utils.data_utils import get_file
-
-import os, random
-
+from shot import shot
 
 class FaceCV(object):
     
@@ -79,78 +78,69 @@ class FaceCV(object):
         return resized_img, (x_a, y_a, x_b - x_a, y_b - y_a)
 
     def detect_face(self):
-            
-   
-   
         face_cascade = cv2.CascadeClassifier(self.CASE_PATH)
 
-        # 0 means the default video capture device in OS
-        video_capture = cv2.VideoCapture(0)
-        # infinite loop, break by key ESC
-        while True:
-            if not video_capture.isOpened():
-                sleep(5)
-            # Capture frame-by-frame
-            ret, frame = video_capture.read()
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            faces = face_cascade.detectMultiScale(
-                gray,
-                scaleFactor=1.2,
-                minNeighbors=10,
-                minSize=(self.face_size, self.face_size)
-            )
-            if faces is not ():
-                
-                # placeholder for cropped faces
-                face_imgs = np.empty((len(faces), self.face_size, self.face_size, 3))
-                for i, face in enumerate(faces):
-                    face_img, cropped = self.crop_face(frame, face, margin=40, size=self.face_size)
-                    (x, y, w, h) = cropped
-                    cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 200, 0), 2)
-                    face_imgs[i,:,:,:] = face_img
-               
-                if len(face_imgs) > 0:
-                    # predict ages and genders of the detected faces
-                    results = self.model.predict(face_imgs)
-                    predicted_genders = results[0]
-                    ages = np.arange(0, 101).reshape(101, 1)
-                    predicted_ages = results[1].dot(ages).flatten()
-                   
-                # draw results
-                for i, face in enumerate(faces):
-                    label = "{}, {}".format(int(predicted_ages[i]),
-                                            "F" if predicted_genders[i][0] > 0.5 else "M")
-                    print(int(predicted_ages[i]),predicted_genders[i][0])
-                    if predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
-                        # print("Young")
-                        return 'Beta'
-                    elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<40)) :
-                        # print("middle")
-                        return 'sir'
-                    elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>20) and (int(predicted_ages[i])<40)) :
-                        # print("female")
-                        return 'maaam'
-                    elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
-                        # print("female")
-                        return 'Beti'
-                        # # Closes all the frames
-                        cv2.destroyAllWindows()
-                        
+        shot('gender.png')
+        frame = cv2.imread("gender.png")
+
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        faces = face_cascade.detectMultiScale(
+            gray,
+            scaleFactor=1.2,
+            minNeighbors=10,
+            minSize=(self.face_size, self.face_size)
+        )
+        if faces is not ():
             
-                        
-                        
-                    
-                    self.draw_label(frame, (face[0], face[1]), label)
-            else:
-                print('No faces')
-
-            cv2.imshow('Keras Faces', frame)
-            if cv2.waitKey(5) == 27:  # ESC key press
-                break
-        # When everything is done, release the capture
-        video_capture.release()
-        cv2.destroyAllWindows()
-
+            # placeholder for cropped faces
+            face_imgs = np.empty((len(faces), self.face_size, self.face_size, 3))
+            for i, face in enumerate(faces):
+                face_img, cropped = self.crop_face(frame, face, margin=40, size=self.face_size)
+                (x, y, w, h) = cropped
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 200, 0), 2)
+                face_imgs[i,:,:,:] = face_img
+            
+            if len(face_imgs) > 0:
+                # predict ages and genders of the detected faces
+                results = self.model.predict(face_imgs)
+                predicted_genders = results[0]
+                ages = np.arange(0, 101).reshape(101, 1)
+                predicted_ages = results[1].dot(ages).flatten()
+                
+            # draw results
+            for i, face in enumerate(faces):
+                label = "{}, {}".format(int(predicted_ages[i]),
+                                        "F" if predicted_genders[i][0] > 0.5 else "M")
+                print(int(predicted_ages[i]),predicted_genders[i][0])
+                if predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
+                    print("beta")
+                    label_position = (150,200)
+                    cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
+                    cv2.imwrite("gender_test.png",frame) 
+                    return 'beta'
+                elif predicted_genders[i][0] < 0.5 and ((int(predicted_ages[i])>=20) and (int(predicted_ages[i])<40)) :
+                    print("Sir")
+                    label_position = (150,200)
+                    cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
+                    cv2.imwrite("gender_test.png",frame) 
+                    return 'sir'
+                elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>10) and (int(predicted_ages[i])<20)) :
+                    print("beti")
+                    label_position = (150,200)
+                    cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
+                    cv2.imwrite("gender_test.png",frame) 
+                    return 'beti'
+                elif predicted_genders[i][0] > 0.5 and ((int(predicted_ages[i])>=20) and (int(predicted_ages[i])<40)) :
+                    print("maam")
+                    label_position = (150,200)
+                    cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
+                    cv2.imwrite("gender_test.png",frame) 
+                    return 'maam'
+                
+                self.draw_label(frame, (face[0], face[1]), label)
+        else:
+            print('No faces')
+            return ''
 
 def get_args():
     parser = argparse.ArgumentParser(description="This script detects faces from web cam input, "
@@ -171,10 +161,17 @@ def gender_age():
 
     face = FaceCV(depth=depth, width=width)
 
-    gender_age = face.detect_face() 
-    cv2.destroyAllWindows() 
-    return gender_age
+    name = face.detect_face()
+    return name
 
 if __name__ == "__main__":
-    gender_age()
+    while True:
+        gender_age()
     
+    
+
+
+
+
+
+
