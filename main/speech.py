@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import pyttsx3
+from gender_age import gender_age
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -18,7 +19,8 @@ def talk(message):
 def take_command():
     try:
         with sr.Microphone() as source:
-            talk('listening ...')
+            title = str(gender_age())
+            talk('listening '+ str(title) +'...')
             listener.pause_threshold = 1
             listener.adjust_for_ambient_noise(source)
             voice = listener.listen(source)
@@ -32,8 +34,8 @@ def take_command():
             print('this is the '+str(command))
             #return command
     except Exception as e:
-        # print(e)    
-        talk("Say that again please...")  
+        print(e)    
+        talk(f"Say that again please {title}...")  
         return "None"
     return command
     
@@ -73,8 +75,8 @@ def gender_input(msg):
 
 
 
-# if __name__ == '__main__':
-#     x=take_command()
-#     num = float_input(x)
-#     talk("The input is " + str(num))
+if __name__ == '__main__':
+    x=take_command()
+    num = float_input(x)
+    talk("The input is " + str(num))
 
