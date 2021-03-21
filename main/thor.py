@@ -18,8 +18,6 @@ import random
 import cv2
 from plyer import notification
 
-
-
 def jokes():
     speak(pyjokes.get_joke())
 
@@ -28,7 +26,6 @@ def cpu():
     speak('CPU is at'+ usage)
     battery = psutil.sensors_battery()
     speak("Battery is at"+ str(battery.percent))
-
 
 def wishMe(name,title):
     speak("Welcome"+ str(name))
@@ -57,7 +54,6 @@ def wishMe(name,title):
         speak("Good Night"+ str(name)+str(title))
 
     speak(f"THOR at your Service. Please tell me how can I help You {title}")
-
 
 def run():
     wishMe(NAME,TITLE)
@@ -99,31 +95,35 @@ def run():
         else:
             talk(str(brain(command)))
 
+def authentication():
+    if str(face())=="SUBHO":
+        number = random.randint(100000,999999)
+        notification.notify(
+        title = "Hacker",
+        message = f"You OTP is {number}",
+        timeout = 30
+        )
+        print(number)
+        num = int(input("Enter the OTP : "))
+        if num == number :
+            talk("Voice Authentication")
+            talk(f"Say your name")
+            if (str(voice_run())=='subho'):
+                talk("Access Granted")
+                return 'unlocked'
+
 if __name__ == '__main__':
     NAME = 'Subhomoy'
     WAKE = ["hey lex","wake up"]
     EXIT =["go offline"]
     TITLE = str(gender_age())
-    while True:
-        command = take_command()
-        for phrase in WAKE:
-            if phrase in command and str(face())=="SUBHO" :
-                number = random.randint(100000,999999)
-                notification.notify(
-                title = "Hacker",
-                message = f"You OTP is {number}",
-                timeout = 30
-                )
-                print(number)
-                num = int(input("Enter the OTP : "))
-                if num == number :
-                    talk("Voice Authentication")
-                    talk(f"Say your name")
-                    if (str(voice_run())=='subho'):
-                        talk("Access Granted")
-                        run()
+    if str(authentication()) == 'unlocked':
+        while True:
+            command = take_command()
+            for phrase in WAKE:
+                if phrase in command :
+                    run()
 
-        for phrase in EXIT:
-            if phrase in command:
-                sys.exit()
-    
+            for phrase in EXIT:
+                if phrase in command:
+                    sys.exit()

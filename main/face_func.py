@@ -43,7 +43,7 @@ print('Encoding Complete')
 def face():
 
     shot('face.png')
-    img = cv2.imread("opencv.png")
+    img = cv2.imread("face.png")
     # success, img = cap.read()
     imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
@@ -62,11 +62,12 @@ def face():
             label_position = (150,200)
             cv2.putText(img,name,label_position,cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
             cv2.imwrite("face_test.png",img)
-            return name
             # return 'unlocked'
         else:
+            name = 'not found'
             print('not found')
-
+            cv2.imwrite("face_test.png",img)
+        return name
             
 
 
