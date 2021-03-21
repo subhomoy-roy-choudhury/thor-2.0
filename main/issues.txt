@@ -13,10 +13,11 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 # MODULES TO DO :-
-a. Text Detection.
+a. Text Detection and Recognition.
 b. Hand Writing Recognition 
 c. Mask Detection.
 d. Sign Language Detection.
+e. Read books using tesseract
 
 # MODULES DONE :-
 a. Facial Recognition(improvement needed)
