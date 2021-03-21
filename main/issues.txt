@@ -12,7 +12,17 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 4. facial recogniton not working quite well . must use the VGG model for facial recognition.
 
 
-4. MODULES TO DO :-
-a. Gender Recognition using Speech for adding title (Sir/Maam).
-b. Mood/Emotion Recognition using Speech and Face Recogniton.  
-c. Hand Writing Recognition 
+# MODULES TO DO :-
+a. Text Detection and Recognition.
+b. Hand Writing Recognition 
+c. Mask Detection.
+d. Sign Language Detection.
+e. Read books using tesseract
+
+# MODULES DONE :-
+a. Facial Recognition(improvement needed)
+b. Speaker Recognition(improvement needed)
+c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)
+d. Mood/Emotion Recognition using Face Recogniton.  
+e. Chatbot(improvement needed)
+f. Heart Disease Prediction 
