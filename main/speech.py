@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import pyttsx3
 from gender_age import gender_age
+from emotion_func import emotion
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -18,8 +19,16 @@ def talk(message):
 
 def take_command():
     try:
+        title = str(gender_age())
+        emotion1 = str(emotion())
+        print(emotion1)
+        if emotion1 == 'Angry' or emotion1 == 'Sad':
+            talk(f'Are you {emotion1} {title}')
+        elif emotion1 == 'Surprise' or emotion1 == 'Happy':
+            talk(f'Are you {emotion1} {title}')
+        elif emotion1 == 'Neutral' :
+            talk('hiii sir')
         with sr.Microphone() as source:
-            title = str(gender_age())
             talk('listening '+ str(title) +'...')
             listener.pause_threshold = 1
             listener.adjust_for_ambient_noise(source)
@@ -50,7 +59,7 @@ def float_input(msg):
         talk("The input is " + str(command))
         return command
     except Exception as e:
-        print(e)
+        # print(e)
         talk(" please...")  
 
     
