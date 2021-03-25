@@ -11,6 +11,8 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 4. facial recogniton not working quite well . must use the VGG model for facial recognition.
 
+5. In pyttsx there is run and wait function which is creating problem in app.py in returning the json. So it was changed from pyttsx to gtts .
+FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # MODULES TO DO :-
 a. Text Detection and Recognition.
