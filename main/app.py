@@ -20,9 +20,6 @@ import gtts
 from playsound import playsound
 
 NAME = 'SUBHOMOY'
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
 
 def speak(text):
     tts = gtts.gTTS(text, lang="en")
