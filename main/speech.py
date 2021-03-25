@@ -62,8 +62,6 @@ def float_input(msg):
         # print(e)
         talk(" please...")  
 
-    
-
 def gender_input(msg):
     try:
         talk(msg)
