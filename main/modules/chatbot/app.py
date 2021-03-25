@@ -7,7 +7,7 @@ from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
 CORS(app)
-# run_with_ngrok(app)               #this is needed to use ngrok for port forwarding
+run_with_ngrok(app)               #this is needed to use ngrok for port forwarding
 database={'subho':'hero','soham':'chomu','yash':'pagla','tublu':'7415'}
 
 # @app.route('/predict',methods=['POST'])
