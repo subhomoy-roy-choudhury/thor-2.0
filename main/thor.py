@@ -73,7 +73,7 @@ def run():
             speak(str(date)+' '+str(month)+' '+ str(year))
         elif 'who are you' in command or 'what can you do' in command:
             system_data = platform.uname()
-            speak('I am THOR version 1 point O' +str(NAME)+ 'persoanl assistant.')
+            speak('I am THOR version 1 point O' +str(NAME)+ 'personal assistant.')
             speak('My Operating System is'+str(system_data.system))
             speak('My Machine is'+str(system_data.machine))
             speak('My Processor is'+str(system_data.processor))
