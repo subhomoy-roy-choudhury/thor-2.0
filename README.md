@@ -20,17 +20,17 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # MODULES TO DO :-
-a. Text Detection and Recognition.
-b. Hand Writing Recognition 
-c. Mask Detection.
-d. Sign Language Detection.
-e. Read books using tesseract
-f. Cycle indicator.
+a. Text Detection and Recognition.<br>
+b. Hand Writing Recognition.<br> 
+c. Mask Detection.<br>
+d. Sign Language Detection.<br>
+e. Read books using tesseract.<br>
+f. Cycle indicator.<br>
 
 # MODULES DONE :-
 a. Facial Recognition(improvement needed) :- https://github.com/subhomoy-roy-choudhury/Facial-Recognition-OpenCV<br>
 b. Speaker Recognition(improvement needed)<br>
-c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)<br>
+c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed):- https://github.com/subhomoy-roy-choudhury/Gender-Age-Recognition<br>
 d. Mood/Emotion Recognition using Face Recogniton :- https://github.com/subhomoy-roy-choudhury/Facial-Emotion-Recognition-OpenCV  <br>
 e. Chatbot(improvement needed):- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot<br>
 f. Heart Disease Prediction :- https://github.com/subhomoy-roy-choudhury/Heart-Disease-Predict <br>
