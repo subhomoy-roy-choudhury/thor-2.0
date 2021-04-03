@@ -1,14 +1,13 @@
 # thor-2.0
 
 # MODULES DONE :-
-a. Facial Recognition(improvement needed)
-b. Speaker Recognition(improvement needed)
-c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)
-d. Mood/Emotion Recognition using Face Recogniton.  
-e. Chatbot(improvement needed)
-- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot
-f. Heart Disease Prediction 
-g. Multithreading and Multiprocessing
+a. Facial Recognition(improvement needed)<br>
+b. Speaker Recognition(improvement needed)<br>
+c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)<br>
+d. Mood/Emotion Recognition using Face Recogniton.  <br>
+e. Chatbot(improvement needed):- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot<br>
+f. Heart Disease Prediction <br>
+g. Multithreading and Multiprocessing<br>
 
 # for adding commands LINKS:-
 https://github.com/AaryanK/DragonZpyder/blob/master/DragonZpyder
