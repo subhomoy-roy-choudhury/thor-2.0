@@ -11,9 +11,10 @@ from shot import shot
 
 
 
+
 # from PIL import ImageGrab
 
-path = 'modules/Facial_Recognition/Images_train'
+path = 'Images_train'
 images = []
 classNames = []
 myList = os.listdir(path)
@@ -71,7 +72,7 @@ def face():
             
 
 
-# if __name__ == '__main__':
-#     while True:
-#         face() 
+if __name__ == '__main__':
+    while True:
+        face() 
 
