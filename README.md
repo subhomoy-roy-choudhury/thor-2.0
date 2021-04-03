@@ -20,12 +20,12 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # MODULES TO DO :-
-a. Text Detection and Recognition.
-b. Hand Writing Recognition 
-c. Mask Detection.
-d. Sign Language Detection.
-e. Read books using tesseract
-f. Cycle indicator.
+a. Text Detection and Recognition.<br>
+b. Hand Writing Recognition.<br> 
+c. Mask Detection.<br>
+d. Sign Language Detection.<br>
+e. Read books using tesseract.<br>
+f. Cycle indicator.<br>
 
 # MODULES DONE :-
 a. Facial Recognition(improvement needed) :- https://github.com/subhomoy-roy-choudhury/Facial-Recognition-OpenCV<br>
