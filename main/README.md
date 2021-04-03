@@ -1,7 +1,15 @@
 # thor-2.0
 
-# MODULES LINKS:-
+# MODULES DONE :-
+a. Facial Recognition(improvement needed)
+b. Speaker Recognition(improvement needed)
+c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)
+d. Mood/Emotion Recognition using Face Recogniton.  
+e. Chatbot(improvement needed)
 - https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot
+f. Heart Disease Prediction 
+g. Multithreading and Multiprocessing
+
 # for adding commands LINKS:-
 https://github.com/AaryanK/DragonZpyder/blob/master/DragonZpyder
 https://github.com/subhomoy-roy-choudhury/Thor
@@ -16,8 +24,6 @@ https://drive.google.com/file/d/12Ub2ZUtiYXL1QKUPlAy6oOG4Qhn0GM0H/view
 https://colab.research.google.com/drive/1DOvXJZRkjfKfF9oUpCZXSU3hPG3g1h-l?usp=sharing
 https://colab.research.google.com/drive/1cdaVsXb0uQy_xq_pBZHUxOpX-e5Xa7rJ?usp=sharing
 https://colab.research.google.com/drive/1KuI6BjaBsuz8fClweso_c2aNgqmSPezl?usp=sharing
-
-
 
 #-------------------------
 # PyPower Project - Emotion Detection using AI
