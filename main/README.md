@@ -4,7 +4,7 @@
 a. Facial Recognition(improvement needed) :- https://github.com/subhomoy-roy-choudhury/Facial-Recognition-OpenCV<br>
 b. Speaker Recognition(improvement needed)<br>
 c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)<br>
-d. Mood/Emotion Recognition using Face Recogniton.  <br>
+d. Mood/Emotion Recognition using Face Recogniton :- https://github.com/subhomoy-roy-choudhury/Facial-Emotion-Recognition-OpenCV  <br>
 e. Chatbot(improvement needed):- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot<br>
 f. Heart Disease Prediction <br>
 g. Multithreading and Multiprocessing<br>
