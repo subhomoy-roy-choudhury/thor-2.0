@@ -17,12 +17,12 @@ path = 'modules/Facial_Recognition/Images_train'
 images = []
 classNames = []
 myList = os.listdir(path)
-print(myList)
+# print(myList)
 for cl in myList:
     curImg = cv2.imread(f'{path}/{cl}')
     images.append(curImg)
     classNames.append(os.path.splitext(cl)[0])
-print(classNames)
+# print(classNames)
 
 
 def findEncodings(images):
@@ -37,7 +37,7 @@ def findEncodings(images):
 
 
 encodeListKnown = findEncodings(images)
-print('Encoding Complete')
+# print('Encoding Complete')
 
 
 def face():

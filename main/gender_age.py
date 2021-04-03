@@ -80,7 +80,7 @@ class FaceCV(object):
     def detect_face(self):
         face_cascade = cv2.CascadeClassifier(self.CASE_PATH)
         label_dict = []
-        for i in range(5):
+        for i in range(1):
             shot('gender.png')
             frame = cv2.imread("gender.png")
 
@@ -141,7 +141,8 @@ class FaceCV(object):
                     self.draw_label(frame, (face[0], face[1]), label)
             else:
                 print('No faces')
-                label1 = ''
+                label1 = 'Sir'
+                label_dict.append(label1)
         return label_dict[-1]
 
 def get_args():

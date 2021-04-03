@@ -2,12 +2,23 @@ import speech_recognition as sr
 import pyttsx3
 from gender_age import gender_age
 from emotion_func import emotion
+import gtts
+import os
+from playsound import playsound
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 t = {'one':'1','two':'2','three':'3','four':'4','five':'5','six':'6','seven':'7','eight':'8','nine':'9','ten':'10'}
+
+def speak1(text):
+    file = "hola.mp3"
+    tts = gtts.gTTS(text, lang="en")
+    tts.save(file)
+    playsound(file)
+    os.remove(file)
+    return text
 
 def speak(text):
     engine.say(text)
@@ -29,7 +40,7 @@ def take_command():
         elif emotion1 == 'Neutral' :
             talk('hiii sir')
         with sr.Microphone() as source:
-            talk('listening '+ str(title) +'...')
+            print('listening '+ str(title) +'...')
             listener.pause_threshold = 1
             listener.adjust_for_ambient_noise(source)
             voice = listener.listen(source)
@@ -44,7 +55,7 @@ def take_command():
             #return command
     except Exception as e:
         print(e)    
-        talk(f"Say that again please {title}...")  
+        print(f"Say that again please {title}...")  
         return "None"
     return command
     
