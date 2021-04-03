@@ -19,7 +19,7 @@ def emotion():
     cascadePath = "haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascadePath);
     label_list =[]
-    for i in range(5):
+    for i in range(1):
         shot('opencv.png')
         font = cv2.FONT_HERSHEY_SIMPLEX
 

@@ -1,5 +1,7 @@
 # thor-2.0
 
+# MODULES LINKS:-
+- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot
 # for adding commands LINKS:-
 https://github.com/AaryanK/DragonZpyder/blob/master/DragonZpyder
 https://github.com/subhomoy-roy-choudhury/Thor

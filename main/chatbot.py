@@ -3,15 +3,15 @@ import json
 
 import torch
 
-from modules.chatbot.model import NeuralNet
-from modules.chatbot.nltk_utils import bag_of_words, tokenize
+from supporting_files.chatbot.model import NeuralNet
+from supporting_files.chatbot.nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('modules/chatbot/jsons/master_intents.json', 'r') as json_data:
+with open('supporting_files/chatbot/master_intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "modules/chatbot/data.pth"
+FILE = "pretrained_models/data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
@@ -26,12 +26,8 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Thor"
-print("Let's chat! (type 'quit' to exit)")
-# while True:
-#     # sentence = "do you use credit cards?"
-#     sentence = input("You: ")
-#     if sentence == "quit":
-#         break
+# print("Let's chat! (type 'quit' to exit)")
+
 def brain(sentence):
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -56,3 +52,8 @@ def brain(sentence):
         # print(f"{bot_name}: I do not understand...")
         response = "I do not understand..."
         return response
+
+if __name__ == '__main__':
+    command =str(input(f'{bot_name}: '))
+    result=str(brain(command))
+    print(f'you : {result}')

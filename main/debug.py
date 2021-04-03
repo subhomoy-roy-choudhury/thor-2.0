@@ -1,11 +1,13 @@
 import datetime
 import os
+import threading
 from threading import Thread
 from multiprocessing import Process
 import platform
 import gtts
 from playsound import playsound
 
+ 
 def speak(text):
     file = "hola.mp3"
     tts = gtts.gTTS(text, lang="en")
@@ -40,35 +42,36 @@ def run():
             # t1 = threading.Thread(target=date, name='t1')
             # t1.start()
             try:
-                if p2.is_alive()==True:
-                    print('terminate p1')
-                    p2.terminate()
-                    p1 = Process(target=date ,name='p1')
-                    p1.start()
+                if p.is_alive()==True:
+                    print('terminate process')
+                    p.terminate()
+                    p = Process(target=date ,name='p1')
+                    p.start()
             except:
-                p1 = Process(target=date ,name='p1')
-                p1.start()
+                p = Process(target=date ,name='p1')
+                p.start()
         elif 'who are you' in command or 'what can you do' in command:
             # t2 = threading.Thread(target=system, name='t2')
             # t2.start()
             try:
-                if p1.is_alive()==True:
-                    print('terminate p1')
-                    p1.terminate()
-                    p2 = Process(target=system,name='p2')
-                    p2.start()
+                if p.is_alive()==True:
+                    print('terminate process')
+                    p.terminate()
+                    p = Process(target=system,name='p2')
+                    p.start()
 
             except:
-                p2 = Process(target=system,name='p2')
-                p2.start()
+                p = Process(target=system,name='p2')
+                p.start()
 
 
 if __name__ == '__main__':
 
-    thread = Thread(target=run, name = 'RUN')
+    thread = threading.Thread(target=run, name = 'RUN')
     thread.setDaemon(True)  
     print(thread.isDaemon()) 
     thread.start()
     thread.join()   
+
 
   

@@ -16,6 +16,9 @@ import psutil
 import platform
 import random
 import cv2
+import threading
+from threading import Thread
+from multiprocessing import Process
 from plyer import notification
 
 def jokes():
@@ -55,31 +58,39 @@ def wishMe(name,title):
 
     speak(f"THOR at your Service. Please tell me how can I help You {title}")
 
+def date():
+    year = int(datetime.datetime.now().year)
+    month = int(datetime.datetime.now().month)
+    date = int(datetime.datetime.now().day)
+    speak("the current Date is")
+    speak(str(date)+' '+str(month)+' '+ str(year))
+    # speak("I am going to Fuck You",file)
+
+def system():
+    system_data = platform.uname()
+    speak('I am THOR version 1 point O personal assistant.')
+    speak('My Operating System is'+str(system_data.system))
+    speak('My Machine is'+str(system_data.machine))
+    speak('My Processor is'+str(system_data.processor))
+    speak('My Release is'+str(system_data.release))
+    speak('My Version is'+str(system_data.version))
+
 def run():
     wishMe(NAME,TITLE)
     while True:
         command = take_command()
         print(command)
+        for thread in threading.enumerate(): 
+            print(thread.name)
         if 'open google' in command:
             webbrowser.open("google.com")
         elif 'the time' in command:
             strTime = datetime.datetime.now().strftime("%I:%M:%S")    
             speak(f"Sir, the time is {strTime}")
         elif 'the date' in command:
-            year = int(datetime.datetime.now().year)
-            month = int(datetime.datetime.now().month)
-            date = int(datetime.datetime.now().day)
-            speak("the current Date is")
-            speak(str(date)+' '+str(month)+' '+ str(year))
+            date()
         elif 'who are you' in command or 'what can you do' in command:
-            system_data = platform.uname()
-            speak('I am THOR version 1 point O' +str(NAME)+ 'personal assistant.')
-            speak('My Operating System is'+str(system_data.system))
-            speak('My Machine is'+str(system_data.machine))
-            speak('My Processor is'+str(system_data.processor))
-            speak('My Release is'+str(system_data.release))
-            speak('My Version is'+str(system_data.version))
-
+            system()
         elif "who made you" in command or "who created you" in command or "who discovered you" in command:
             speak("I am built by Subhomoy")
             print("I was built by Subhomoy")
@@ -92,7 +103,7 @@ def run():
             break
         elif 'heart' in command:
             heart_disease_predict()
-        else:
+        elif command != "None" :
             talk(str(brain(command)))
 
 def authentication():
@@ -127,3 +138,4 @@ if __name__ == '__main__':
             for phrase in EXIT:
                 if phrase in command:
                     sys.exit()
+
