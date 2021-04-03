@@ -1,7 +1,7 @@
 # thor-2.0
 
 # MODULES DONE :-
-a. Facial Recognition(improvement needed)<br>
+a. Facial Recognition(improvement needed) :- https://github.com/subhomoy-roy-choudhury/Facial-Recognition-OpenCV<br>
 b. Speaker Recognition(improvement needed)<br>
 c. Gender Recognition using Speech for adding title (Sir/Maam).(improvement needed)<br>
 d. Mood/Emotion Recognition using Face Recogniton.  <br>
