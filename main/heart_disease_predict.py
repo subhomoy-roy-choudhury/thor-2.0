@@ -42,7 +42,7 @@ def heart_disease_predict():
     print(param,type(param[1]))
     # unpickle Model
     
-    model = pd.read_pickle(r'modules/heart_predict/new_model.pickle')
+    model = pd.read_pickle(r'pretrained_models/new_model.pickle')
     # Prediction through parameters
     result = model.predict([[param[0],param[1],param[2],param[3],param[4]]])  # input must be 2D array
     print(result)

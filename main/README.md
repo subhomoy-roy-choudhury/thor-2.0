@@ -8,6 +8,8 @@ d. Mood/Emotion Recognition using Face Recogniton :- https://github.com/subhomoy
 e. Chatbot(improvement needed):- https://github.com/subhomoy-roy-choudhury/Pytorch-Chatbot<br>
 f. Heart Disease Prediction <br>
 g. Multithreading and Multiprocessing<br>
+h. Magic Scripts :- https://github.com/subhomoy-roy-choudhury/Magic-Scripts<br>
+i. Web Scraping :- https://github.com/subhomoy-roy-choudhury/Web-Scraping <br>
 
 # for adding commands LINKS:-
 https://github.com/AaryanK/DragonZpyder/blob/master/DragonZpyder
