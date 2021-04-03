@@ -1,3 +1,5 @@
 pretrained_models/haarcascade_frontalface_alt.xml
 pretrained_models/data.pth
 pretrained_models/weights.18-4.06.hdf5
+pretrained_models/Emotion_Detection.h5
+pretrained_models/haarcascade_frontalface_default.xml

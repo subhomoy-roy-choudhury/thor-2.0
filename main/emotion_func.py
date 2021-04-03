@@ -15,8 +15,8 @@ def emotion():
 
     # Emotions related to ids: example ==> Anger: id=0,  etc
     names = ['Angry','Happy','Neutral','Sad','Surprise']
-    classifier =load_model('./Emotion_Detection.h5')
-    cascadePath = "haarcascade_frontalface_default.xml"
+    classifier =load_model('pretrained_models/Emotion_Detection.h5')
+    cascadePath = "pretrained_models/haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascadePath);
     label_list =[]
     for i in range(1):
@@ -67,23 +67,5 @@ def emotion():
 
 
 if __name__ == '__main__':
-    emotion()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    while True:
+        emotion()
