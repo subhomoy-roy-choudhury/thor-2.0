@@ -32,6 +32,8 @@ def take_command():
     try:
         title = str(gender_age())
         emotion1 = str(emotion())
+        # title = 'sir'
+        # emotion1 = 'Angry'
         print(emotion1)
         if emotion1 == 'Angry' or emotion1 == 'Sad':
             talk(f'Are you {emotion1} {title}')

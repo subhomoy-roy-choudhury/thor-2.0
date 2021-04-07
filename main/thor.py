@@ -1,6 +1,7 @@
 from speech import *
 from heart_disease_predict import *
 from chatbot import brain 
+from cmdbot import command_dl
 from face_func import face
 from emotion_func import emotion
 from gender_age import gender_age
@@ -75,37 +76,6 @@ def system():
     speak('My Release is'+str(system_data.release))
     speak('My Version is'+str(system_data.version))
 
-def run():
-    wishMe(NAME,TITLE)
-    while True:
-        command = take_command()
-        print(command)
-        for thread in threading.enumerate(): 
-            print(thread.name)
-        if 'open google' in command:
-            webbrowser.open("google.com")
-        elif 'the time' in command:
-            strTime = datetime.datetime.now().strftime("%I:%M:%S")    
-            speak(f"Sir, the time is {strTime}")
-        elif 'the date' in command:
-            date()
-        elif 'who are you' in command or 'what can you do' in command:
-            system()
-        elif "who made you" in command or "who created you" in command or "who discovered you" in command:
-            speak("I am built by Subhomoy")
-            print("I was built by Subhomoy")
-        elif 'cpu'in command:
-            cpu()
-        elif 'joke' in command:
-            jokes()
-        elif 'go to sleep' in command:
-            speak("ok sir shutting down the system")
-            break
-        elif 'heart' in command:
-            heart_disease_predict()
-        elif command != "None" :
-            talk(str(brain(command)))
-
 def authentication():
     if str(face())=="SUBHO":
         number = random.randint(100000,999999)
@@ -123,19 +93,57 @@ def authentication():
                 talk("Access Granted")
                 return 'unlocked'
 
+def run():
+    wishMe(NAME,TITLE)
+    while True:
+        command = take_command()
+        command = str(command_dl(command))
+        print(command)
+        for thread in threading.enumerate(): 
+            print(thread.name)
+        if 'open google' in command:
+            webbrowser.open("google.com")
+        elif 'the time' in command:
+            strTime = datetime.datetime.now().strftime("%I:%M:%S")    
+            speak(f"Sir, the time is {strTime}")
+        elif 'the date' in command:
+            date()
+        elif 'who are you' in command :
+            system()
+        elif "who made you" in command :
+            speak("I am built by Subhomoy")
+            print("I was built by Subhomoy")
+        elif 'cpu'in command:
+            cpu()
+        elif 'joke' in command:
+            jokes()
+        elif 'go to sleep' in command:
+            speak("ok sir shutting down the system")
+            break
+        elif 'heart' in command:
+            heart_disease_predict()
+        elif command != "None" :
+            talk(str(brain(command)))
+
+
 if __name__ == '__main__':
     NAME = 'Subhomoy'
-    WAKE = ["hey lex","wake up"]
-    EXIT =["go offline"]
+    # TITLE = "sir"
     TITLE = str(gender_age())
     if str(authentication()) == 'unlocked':
         while True:
             command = take_command()
-            for phrase in WAKE:
-                if phrase in command :
-                    run()
+            if 'WAKE' in command:
+                run()
 
-            for phrase in EXIT:
-                if phrase in command:
-                    sys.exit()
+            if 'EXIT' in command:
+                sys.exit()
+    # while True: 
+    #     command = take_command()
+    #     command = str(command_dl(command))
+    #     print(command)
+    #     if 'WAKE' in command:
+    #         run()
 
+    #     if 'EXIT' in command:
+    #         sys.exit()
