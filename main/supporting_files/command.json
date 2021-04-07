@@ -1,0 +1,91 @@
+{
+    "intents": [
+        {
+            "tag": "WAKE",
+            "patterns": [
+                "hey lex",
+                "Hey",
+                "wake up"
+            ]
+        },
+        {
+            "tag": "open google",
+            "patterns": [
+                "open google",
+                "google",
+                "start browser"
+            ]
+        },
+        {
+            "tag": "the time",
+            "patterns": [
+                "tell me the time",
+                "do you know the tiem",
+                "what's the time"
+            ]
+        },
+        {
+            "tag": "the date",
+            "patterns": [
+                "tell me the date",
+                "what's the date",
+                "do you know the date"
+            ]
+        },
+        {
+            "tag": "who are you",
+            "patterns": [
+                "what can you do",
+                "who are you",
+                "what is your name"
+            ]
+        },
+        {
+            "tag": "who made you",
+            "patterns": [
+                "who made you?",
+                "who created you?",
+                "who discovered you?"
+            ]
+        },
+        {
+            "tag": "cpu",
+            "patterns": [
+                "tell me about the cpu?",
+                "what is the status of cpu?",
+                "do you know the cpu status?"
+            ]
+        },
+        {
+            "tag": "joke",
+            "patterns": [
+                "tell me a joke",
+                "tell me some jokes!",
+                "do you know any jokes?"
+            ]
+        },
+        {
+            "tag": "go to sleep",
+            "patterns": [
+                "go to sleep",
+                "shut up",
+                "please stop talking"
+            ]
+        },
+        {
+            "tag": "heart",
+            "patterns": [
+                "can you check heart diseases?",
+                "tell me about my heart condition",
+                "do you know about my heart condition?"
+            ]
+        },
+        {
+            "tag": "EXIT",
+            "patterns": [
+                "go offline",
+                "shut down the system"
+            ]
+        }
+    ]
+}

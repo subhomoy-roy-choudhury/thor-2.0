@@ -4,7 +4,6 @@ import pywhatkit
 import pickle
 from flask_ngrok import run_with_ngrok
 from chatbot import brain 
-from thor import jokes, cpu
 import subprocess
 import sys
 import datetime
@@ -20,13 +19,6 @@ import gtts
 from playsound import playsound
 
 NAME = 'SUBHOMOY'
-
-def speak(text):
-    tts = gtts.gTTS(text, lang="en")
-    tts.save("hola.mp3")
-    playsound("hola.mp3")
-    os.remove("hola.mp3")
-    return text
     
 def jokes():
     speak(pyjokes.get_joke())
@@ -36,6 +28,31 @@ def cpu():
     speak('CPU is at'+ usage)
     battery = psutil.sensors_battery()
     speak("Battery is at"+ str(battery.percent))
+
+def speak(text):
+    file = "hola.mp3"
+    tts = gtts.gTTS(text, lang="en")
+    tts.save(file)
+    playsound(file)
+    os.remove(file)
+    return text
+
+def date():
+    year = int(datetime.datetime.now().year)
+    month = int(datetime.datetime.now().month)
+    date = int(datetime.datetime.now().day)
+    speak("the current Date is")
+    speak(str(date)+' '+str(month)+' '+ str(year))
+    # speak("I am going to Fuck You",file)
+
+def system():
+    system_data = platform.uname()
+    speak('I am THOR version 1 point O personal assistant.')
+    speak('My Operating System is'+str(system_data.system))
+    speak('My Machine is'+str(system_data.machine))
+    speak('My Processor is'+str(system_data.processor))
+    speak('My Release is'+str(system_data.release))
+    speak('My Version is'+str(system_data.version))
 
 app = Flask(__name__)
 CORS(app)
@@ -55,20 +72,10 @@ def index():
         msg = speech1(f"Sir, the time is {strTime}")
         return jsonify({'user_input':str(msg)})
     elif 'the date' in user_input:
-        year = int(datetime.datetime.now().year)
-        month = int(datetime.datetime.now().month)
-        date = int(datetime.datetime.now().day)
-        speak("the current Date is")
-        speak(str(date)+' '+str(month)+' '+ str(year))
+        date()
         return jsonify({'user_input':str(user_input)})
     elif 'who are you' in user_input or 'what can you do' in user_input:
-        system_data = platform.uname()
-        speak('I am THOR version 1 point O' +str(NAME)+ 'personal assistant.')
-        speak('My Operating System is'+str(system_data.system))
-        speak('My Machine is'+str(system_data.machine))
-        speak('My Processor is'+str(system_data.processor))
-        speak('My Release is'+str(system_data.release))
-        speak('My Version is'+str(system_data.version))
+        system()
         return jsonify({'user_input':str(user_input)})
     elif "who made you" in user_input or "who created you" in user_input or "who discovered you" in user_input:
         msg = speak("I am built by Subhomoy")

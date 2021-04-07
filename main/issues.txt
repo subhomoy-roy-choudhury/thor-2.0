@@ -14,8 +14,13 @@ FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 5. In pyttsx there is run and wait function which is creating problem in app.py in returning the json. So it was changed from pyttsx to gtts .
 FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-6. Implemented threading and multiprocessing in voice command so that it can interrupt an existing command for an important command.
+6. Implemented threading and multiprocessing in text command so that it can interrupt an existing command for an important command.
 FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+7. Implemented nlp Automated command system so that it can take commands and recognize the commands on the basis of deep learning and natural language processing.
+FIXED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+8. Threading and multiprocessing not working in voice command as well as in API.
 
 # MODULES TO DO :-
 a. Text Detection and Recognition.
@@ -24,6 +29,9 @@ c. Mask Detection.
 d. Sign Language Detection.
 e. Read books using tesseract
 f. Cycle indicator.
+g. Gesture Volume control.
+h. Pose detection.
+i. Object Detection.
 
 # MODULES DONE :-
 a. Facial Recognition(improvement needed)
